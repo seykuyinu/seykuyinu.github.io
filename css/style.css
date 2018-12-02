@@ -1,0 +1,52 @@
+body {
+    font-family: 'Text Me One', sans-serif;
+    font-size: 1em;
+    color: black;
+    background-color: rgb(76, 137, 177);
+    position: absolute; 
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0;
+}
+.main {
+    text-align: left;
+    margin: 5em;
+}
+.content {
+    text-align: left;
+    margin: 5em;
+}
+h1 {
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    font-size: 8em;
+    margin: -10px 0;
+}
+h2 {
+    letter-spacing: 0.3em;
+    font-size: 2.5em;
+}
+h3 {
+    padding-bottom: 20px;
+    font-weight: thin;
+    line-height: 1px;
+}
+.details{
+    font-size: 1.3em;
+}
+
+.verse{
+    margin-top: 1.5em;
+    font-size: 1.3em;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a:visited {
+    color: black;
+}
