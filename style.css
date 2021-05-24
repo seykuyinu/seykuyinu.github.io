@@ -67,4 +67,8 @@ a {
   section {
     margin: 10px;
   }
+
+  hr {
+    width: 100%;
+  }
 }
