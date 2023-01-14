@@ -1,15 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;800&family=Playfair+Display:wght@600&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
 
 body {
   font-weight: 400;
   color: black;
   font-family: Lato, sans-serif;
+  text-align: center;
 }
 
 h1 {
-  font-family: 'Dancing Script', cursive;
-  font-size: 70px;
+  font-family: 'Bad Script';
+  font-size: 25px;
+  letter-spacing: 0.3em;
 }
 
 header h2 {
@@ -24,7 +27,7 @@ p {
 
 header {
   text-align: center;
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 footer {
@@ -49,14 +52,69 @@ main {
 }
 
 a {
-  color: black;
+  color: #f71b68;
+}
+
+/* Columns - from https://www.w3schools.com/howto/howto_css_three_columns.asp */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.left, .right {
+  width: 20%;
+}
+
+.middle {
+  width: 60%;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other,
+ instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.summary {
+  font-size: 35px;
+  text-align: center justify;
+  word-wrap: break-word;
+}
+
+.disclaimer {
+  font-size: 13px;
+}
+
+/* span classes */
+.inline-highlight {
+  color: #f71b68;
+  /* color: #D68C45; */
+}
+
+.pronounced {
+  font-size: 0.6em;
+  /* font-style: italic; */
+  font-family: 'Bad Script';
 }
 
 .social-links a {
-  font-size: 40px;
+  font-size: 30px;
   padding: 0px 8px;
   text-decoration: none;
   color: black;
+}
+
+.about-link a {
+  font-size: 17px;
 }
 
 ::selection {
@@ -72,3 +130,8 @@ a {
     width: 100%;
   }
 }
+
+/* other fonts */
+/* font-family: 'Dancing Script', cursive; */
+/* font-family: 'Sofia Sans Condensed'; */
+
